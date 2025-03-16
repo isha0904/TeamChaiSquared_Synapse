@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Page - Plush Penguin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <h1>Amazon.in</h1>
+            <input type="text" placeholder="Search Amazon.in">
+            <button>Search</button>
+            <div class="cart">🛒 Cart (0)</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div class="image-gallery">
+                <img src="assets/penguin.jpg" alt="Plush Penguin Toy">
+            </div>
+
+            <div class="product-details">
+                <h2>Amazon Brand - Jam & Honey Soft Plush Toy</h2>
+                <p class="rating">⭐ 4.4 | 13,023 Ratings</p>
+                <p class="price"><span class="discount-price">₹198</span> <span class="original-price">₹600</span> <span class="discount">-67%</span></p>
+                
+                <ul class="features">
+                    <li>✅ Super Soft & Huggable</li>
+                    <li>✅ BIS Certified - Safe for Kids</li>
+                    <li>✅ Perfect Gift for Kids</li>
+                    <li>✅ Dimensions: 17 x 10 x 13 cm</li>
+                </ul>
+
+                <button id="addToCart">Add to Cart</button>
+                <p class="stock">In Stock - Sold by <strong>Electronics Bazaar</strong></p>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <h3>Top Reviews from India</h3>
+
+            <div class="review">
+                <p><strong data-reviewer="Ashwin M.">Ashwin M.</strong> ⭐⭐⭐⭐⭐</p>
+                <p id="txt1">"Value for money. A quality product, soft, good-looking."</p>
+                <p><em>Reviewed in India on 11 March 2025 | Style Name: Dinosaur | Colour: Green - 34cms | Verified Purchase</em></p>
+                <p>Helpful | Report</p>
+                <label for="language">Select Language:</label>
+                <select id="language" title="Select Language">
+                    <option value="bn">Bengali</option>
+                    <option value="mr">Marathi</option>
+                </select>
+                <button onclick="translateText(this)">Translate</button>
+            </div>
+
+            <div class="review">
+                <p><strong data-reviewer="Ravi S.">Ravi S.</strong> ⭐⭐⭐⭐☆</p>
+                <p id="txt2">"उत्तम दर्जाचा मऊ टेडी बेअर. दिवाळी सेलमध्ये माझ्या आईसाठी जॅम अँड हनी कडून टेडी बेअर मागवला. आणि विक्रेत्याकडून याआधी घेतलेल्या मऊ खेळण्यांप्रमाणेच, हेदेखील उत्कृष्ट होते. निळ्या रंगाचा रिबन मोत्यासारख्या पांढऱ्या टेडीला अप्रतिम शोभून दिसतो. साहित्याची गुणवत्ता चांगली आहे, कुठेही उसवलेले किंवा सैल धागे नाहीत. आकार आणि कारागिरी देखील उत्तम आहे. आकार दीड फूटाच्या आसपास आहे आणि लिव्हिंग रूममध्ये प्रदर्शनासाठी योग्य आहे. पांढरा रंग पटकन खराब होतो, पण सुदैवाने तो धुवता येतो. आणि याआधीप्रमाणेच, धुवल्यानंतरही साहित्य टिकेल अशी अपेक्षा आहे. इतर ब्रँड्सच्या तुलनेत अतिशय चांगले मूल्य आहे, जसे की आर्चीज. याला सहज ४-४.५ स्टार्स देईन.
+                </p><p><em>Reviewed in India on 6 November 2024 | Style Name: Teddy | Colour: White - 33cms | Verified Purchase</em></p>
+                <p>2 people found this helpful | Helpful | Report</p>
+                <label for="language">Select Language:</label>
+                <select id="language" title="Select Language">
+                    <option value="bn">Bengali</option>
+                    <option value="mr">Marathi</option>
+                </select>
+                <button onclick="translateText(this)">Translate</button>
+            </div>
+            <div class="review">
+                <p><strong data-reviewer="Pooja R.">Pooja R.</strong> ⭐⭐⭐⭐⭐</p>
+                <p id="txt3">"Adorable and Perfect Gift for Kids. The Amazon Brand - Jam & Honey Teddy Bear is absolutely delightful! The 33 cm size is perfect for little hands to cuddle, and the pink color makes it irresistibly cute. The soft and plush material is gentle on the skin, making it safe and ideal for kids. I gifted this to my daughter for her birthday, and she adores it. It has quickly become her favorite toy! The teddy bear is well-made, durable, and looks just as pictured. It’s a wonderful gift option for any occasion. Highly recommended for anyone looking to bring a smile to their child’s face."</p>
+                <p><em>Reviewed in India on 29 December 2024 | Style Name: Teddy | Colour: Pink - 33cms | Verified Purchase</em></p>
+                <p>One person found this helpful | Helpful | Report</p>
+                <label for="language">Select Language:</label>
+                <select id="language" title="Select Language">
+                    <option value="bn">Bengali</option>
+                    <option value="mr">Marathi</option>
+                </select>
+                <button onclick="translateText(this)">Translate</button>
+            </div>
+
+            <div class="review">
+                <p><strong>Arvind G.</strong> ⭐⭐⭐⭐⭐</p>
+                <p>"Perfect Gift for Kids: Jam & Honey Dolphin Plush! The dolphin plush toy is incredibly soft and huggable. The material is gentle on the skin and feels high-quality, making it perfect for young children. The stitching is well done, and the plush looks like it will hold up well to lots of cuddles and playtime. Safety is always a top concern with children's toys, and this dolphin plush meets all expectations. It’s made from non-toxic materials and has no small parts that could pose a choking hazard. If you're looking for a safe and delightful gift for a child, this dolphin plush is a wonderful option."</p>
+                <p><em>Reviewed in India on 1 June 2024 | Style Name: Unicorn | Colour: Pink - 15cms | Verified Purchase</em></p>
+                <p>One person found this helpful | Helpful | Report</p>
+                <label for="language">Select Language:</label>
+                <select id="language" title="Select Language">
+                    <option value="bn">Bengali</option>
+                    <option value="mr">Marathi</option>
+                </select>
+                <button id="changeTextButton" onclick="translateText(this)">Translate</button>
+            </div>
+
+            <div class="review">
+                <p><strong>Krishna P.</strong> ⭐⭐⭐⭐⭐</p>
+                <p id="t1">"Nice worth for money. Nice and superb."</p>
+                <p><em>Reviewed in India on 7 March 2025 | Style Name: Dinosaur | Colour: Green - 34cms | Verified Purchase</em></p>
+                <p>Helpful | Report</p>
+                <label for="language">Select Language:</label>
+                <select id="language" title="Select Language">
+                    <option value="bn">Bengali</option>
+                    <option value="mr">Marathi</option>
+                </select>
+                <button onclick="translateText(this)">Translate</button>
+            </div>
+
+            <div class="review">
+                <p><strong>Ananya T.</strong> ⭐⭐⭐☆</p>
+                <p id="t2>"Size is small. Product finishing, softness, stitching all good. But size is small for the price."</p>
+                <p><em>Reviewed in India on 11 January 2025 | Style Name: Penguin | Colour: Black - 17cms | Verified Purchase</em></p>
+                <p>Helpful | Report</p>
+                <label for="language">Select Language:</label>
+                <select id="language" title="Select Language">
+                    <option value="bn">Bengali</option>
+                    <option value="mr">Marathi</option>
+                </select>
+                <button onclick="translateText(this)">Translate</button>
+            </div>
+
+            <div class="review">
+                <p><strong>Himalaya O.</strong> ⭐⭐⭐⭐☆</p>
+                <p id="t3">"Soft and good."</p>
+                <p><em>Reviewed in India on 24 February 2025 | Style Name: Teddy | Colour: White - 33cms | Verified Purchase</em></p>
+                <p>Helpful | Report</p>
+                <label for="language">Select Language:</label>
+                <select id="language" title="Select Language">
+                    <option value="bn">Bengali</option>
+                    <option value="mr">Marathi</option>
+                </select>
+                <button onclick="translateText(this)">Translate</button>
+            </div>
+
+            <div class="review">
+                <p><strong>Tanya M.</strong> ⭐⭐⭐⭐⭐</p>
+                <p id="t4">"Just wow. The quality is good, it is very cute and a great thing to gift someone."</p>
+                <p><em>Reviewed in India on 27 February 2025 | Style Name: Penguin | Colour: Black - 17cms | Verified Purchase</em></p>
+                <p>Helpful | Report</p>
+                <label for="language">Select Language:</label>
+                <select id="language" title="Select Language">
+                    <option value="bn">Bengali</option>
+                    <option value="mr">Marathi</option>
+                </select>
+                <button onclick="translateText(this)">Translate</button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
