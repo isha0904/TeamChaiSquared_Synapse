@@ -11,6 +11,7 @@ TeamChaiSquared_Synapse/
 │   ├── js/  
 │   ├── assets/logo.png, penguin.png
 │
+|
 │── template/                # HTML templates for the UI  
 │   ├── product.html  
 │   
