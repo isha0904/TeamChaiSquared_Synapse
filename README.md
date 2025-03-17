@@ -21,3 +21,4 @@ TeamChaiSquared_Synapse/
 │   ├── model.py 
 │   ├── upload_hf.py
 
+[PPT Link](https://www.canva.com/design/DAGh4fpgqOc/9bsOes6roTVcWTa9KBCciA/view?utm_content=DAGh4fpgqOc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h516fce2555)
