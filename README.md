@@ -24,5 +24,7 @@ TeamChaiSquared_Synapse/
 │── README.md                # Project documentation  
 
 │── model/                  # Codes for building, training model and pushing to Huggingface
+
 │   ├── model.py 
+
 │   ├── upload_hf.py
